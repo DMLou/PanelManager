@@ -13,8 +13,13 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    external/sqlite/sqlite3.c \
+    DbWrapper.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    external/sqlite/sqlite3.h \
+    DbWrapper.h
 
-FORMS    += mainwindow.ui
+FORMS    += \
+    mainwindow.ui
